@@ -1,0 +1,116 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html, body {
+    background-color: black;
+    font-family: 'Montserrat';
+}
+#container {
+    width: 1000px;
+    /* height: auto; */
+    border: 1px solid black;
+    margin: 0 auto;
+    box-shadow: 0 0 80px rgb(156, 156, 156);
+}
+header {
+    width: 100%;
+    padding: 15px;
+    text-align: center;
+    background-image: linear-gradient(rgb(88, 88, 88), rgb(0, 0, 0));
+    /* background-color: black; */
+    color: rgb(172, 162, 162);
+}
+.main-vid {
+    width: 100%;
+    height: 550px;
+    background-color: black;
+}
+video {
+    max-width: 100%;
+    height: 100%;
+}
+.button {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    background-color: rgb(221, 221, 221);
+}
+.button > * {
+    border-radius: 20px;
+    transition: all 0.5s;
+    text-align: center;
+    margin: 0 15px;
+}
+.button > *:hover {
+    box-shadow: 2px 2px 10px black;
+}
+.mute {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    line-height: 30px;
+    border: 1px solid rgb(100, 92, 92);
+}
+.volume-button {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: cornsilk;
+    line-height: 50px;
+}
+.next-video {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    line-height: 80px;
+    background-color: rgba(214, 188, 132, 0.904);
+}
+.video-button {
+    width: 100px;
+    height: 100px;
+    background-color: rgba(146, 117, 53, 0.904);
+    color: white;
+    line-height: 100px;
+    border-radius: 50%;
+}
+.line {
+    width: 100%;
+    height: 2px;
+    background-color: black;
+}
+.sub-content {
+    padding: 25px 15px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background-image: linear-gradient(rgb(88, 88, 88), rgb(0, 0, 0));
+}
+.sub-content > .videos-list {
+    width: calc(100%/4);
+    border-radius: 20px;
+    transition: all 0.7s;
+    text-align: center;
+    margin: 0 15px;
+}
+.videos-list {
+    display: inline-block;
+    margin: 10px;
+}
+.videos-list > * {
+    width: 100%;
+    height: 250px;
+    transition: all 0.7s;
+}
+.videos-list > video:hover {
+    transform: scale(1.2);
+}
+.nav-bar {
+    color: white;
+    text-align: center;
+}

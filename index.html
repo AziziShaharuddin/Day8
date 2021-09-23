@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Videos using JS</title>
+    <style></style>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css">
+    <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+    <div id="container">
+        <header>
+            <h1>HOME OF VIDEOS</h1>
+        </header>
+        <div class="main">
+            <div class="main-vid">
+                <video id="video" src="./production ID_3818936.mp4" width="100%" controls loop></video>
+            </div>
+            <div class="button">
+                <div id="mute-btn" class="mute" onclick="muteButton()"><i class="fa fa-volume-mute"></i></div>
+                <div class="volume-button" onclick="volumeButton(-0.1)"><i class="fa fa-volume-down"></i></div>
+                <div class="next-video" onclick="switchBackward()">
+                    <i class="fa fa-backward"></i>
+                </div>
+                <div id="play-button" class="video-button" onclick="vidStart()"><i class="fa fa-play"></i></div>
+                <div class="next-video" onclick="switchForward()"><i class="fa fa-forward"></i></div>
+                <div class="volume-button" onclick="volumeButton(0.1)"><i class="fa fa-volume-up"></i></div>
+            </div>      
+        </div>
+        <div class="line"></div>
+        <div class="sub-content">
+            <div class="nav-bar"><i class="fa fa-chevron-left"></i></div>
+            <div class="videos-list" onclick="subVideo('production ID_3818936.mp4')">
+                <video src="./production ID_3818936.mp4"></video>
+            </div>
+            <div class="videos-list" onclick="subVideo('pexels-mart-production-7565884.mp4')">
+                <video src="./pexels-mart-production-7565884.mp4"></video>
+            </div>
+            <div class="videos-list" onclick="subVideo('production ID_4936486.mp4')">
+                <video src="./production ID_4936486.mp4"></video>
+            </div>
+            <div class="videos-list" onclick="subVideo('production ID_5204290.mp4')">
+                <video src="./production ID_5204290.mp4"></video>
+            </div>
+            <div class="nav-bar"><i class="fa fa-chevron-right"></i></div>
+        </div>
+    </div>
+    <script src="./script.js"></script>
+</body>
+</html>
